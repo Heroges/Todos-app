@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {Button, Flex, Group, Modal, Title} from '@svelteuidev/core';
+    import {Button, Flex, Title} from '@svelteuidev/core';
     import ModalCreate from "./ModalCreate.svelte";
 
     export let title = "Активные"
@@ -8,6 +8,10 @@
         opened = !opened;
     }
 </script>
+
+<svelte:head>
+    <title>DaiApps | {title} задачи</title>
+</svelte:head>
 
 <div>
     <Flex class="my-2 select-none" justify="space-between">
