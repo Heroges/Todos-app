@@ -78,6 +78,8 @@
                         Обновлено: {task.updatedAt.toLocaleTimeString('ru-RU')}</p>
                 {/if}
             </Flex>
+        {:else}
+            <p class="mx-auto my-2">Здесь пусто</p>
         {/if}
     {/each}
 </div>
